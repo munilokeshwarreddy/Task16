@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main Page</title>
+    <style>
+        body{
+            background-color: rgb(252,252,252);
+        }
+        .sec-1{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            height: 63vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .main{
+            max-width: 900px;
+            padding: 20px;
+        }
+        .main h1{
+            font-size: 2.4rem;
+            color: white;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .main p{
+            font-size:18px;
+            margin-bottom: 40px;
+            color: white;
+            line-height: 1.2;
+        }
+        .buttons{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+        }
+        
+        .primary{
+            background-color: white;
+            color:  #0a74da;
+            font-size: 20px;
+            padding: 18px 35px;
+            border-radius: 40px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+             transition: 0.3s ease;
+
+        }
+        .secondary{
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            font-size: bold;
+            padding: 18px 35px;
+            border-radius: 40px;
+            cursor: pointer;
+             transition: 0.3s ease;
+        }
+        .primary:hover{
+            background: #f7f4f4;
+             transform: translateY(-8px);
+        }
+        .secondary:hover{
+            background: rgba(255,255,255,0.1);
+             transform: translateY(-8px);
+
+        }
+        .sec-2{
+            background-color: white;
+            padding: 80px 0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.09);
+        }
+        .boxs{
+            max-width: 1100px;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 180px;
+            text-align: center;
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+        .box h2{
+             font-size: 30px;
+             color: #764ba2;
+             font-weight: bold;
+             margin-bottom: 10px;
+        }
+        .box p{
+            font-size: 15px;
+            color: #764ba2;
+        }
+        .icon{
+            border: 2px solid blueviolet;
+           
+            width: 15px;
+            height: 30px;
+            margin-left: 50px;
+        }
+      
+        
+        .sec-3{
+            padding: 80px 10%;
+            text-align: center;
+        }
+        .con-3{
+            max-width: 1200px;
+            margin: auto;
+
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 40px;
+        }
+        .cardy{
+            background: rgb(255, 255, 255);
+            padding: 40px 25px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            transition: 0.3s ease;
+        }
+        .cardy:hover{
+            transform: translateY(-8px);
+        }
+        .cardy p{
+            font-size: 16px;
+            color: #565656;
+            line-height: 1.6;
+        }
+        .cardy h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: black;
+        }
+        .main{
+            font-size: 40px;
+            margin-bottom: 50px;
+            color: black;
+        }
+         .icons{
+            border: 2px solid blueviolet;
+            width: 15px;
+            height: 30px;
+            margin-left: 60px;
+        }
+
+          .sec-4{
+            padding: 80px 10%;
+            
+        }
+        .con-4{
+            max-width: 1200px;
+            margin: auto;
+
+        }
+        .car{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 40px;
+        }
+        .card{
+            background: rgb(255, 255, 255);
+            padding: 40px 25px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            transition: 0.3s ease;
+        }
+        .card:hover{
+            transform: translateY(-8px);
+        }
+        .card p{
+            font-size: 16px;
+            color: #565656;
+            line-height: 1.6;
+        }
+        .card h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #4e39ec;
+            font-weight: bold;
+        }
+        .main-1{
+            font-size: 40px;
+            margin-bottom: 50px;
+            color:#2f2c2c ;
+            text-align: center;
+        }
+        .sec-5{
+            width: 100%;
+        }
+        .sec-5 h1{
+            font-size: 40px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 50px;
+            
+        }
+        .loki{
+            background: rgb(235,235,235);
+            padding: 60px;
+        }
+        .con-5{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        .card-2{
+            background-color: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            width: 350px;
+            text-align: left;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.09);
+            transition: 0.3s ease;
+        }
+        .card-2:hover{
+            transform: translateY(-8px);
+        }
+        .inside-card{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+        }
+        .inside-card h3{
+            font-size: 18px;
+        }
+        span{
+            font-size: 15px;
+        }
+        .forms{
+            background: linear-gradient(135deg,#1e3c72,#2a5298);
+            color: white;
+            padding: 80px 120px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .forms h1{
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .forms p{
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .forms form{
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+        .forms input{
+            padding: 10px;
+            border: none;
+            border-radius: 50px;
+            width: 250px;
+        }
+        .forms button{
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            background-color: white;
+            color: #4e39ec;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        .forms button:hover{
+           transform: translateY(-8px);
+        }
+        .footer{
+            background: #222;
+            color: #fff;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+
+        }
+        .footer-container{
+            display: flex;
+            justify-content: center;
+           flex-wrap: wrap;
+        }
+        .footer-column{
+            width: 25%;
+            min-width: 200px;
+           
+        }
+        .footer-column h2{
+            font-size: 24px;
+            margin-bottom: 18px;
+        }
+        .footer-column h3{
+            margin-left: 30px;
+            font-size: 20px;
+            margin-bottom: 18px;
+        }
+
+        .footer-column p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #fffefe;
+        }
+        .footer-column ul{
+            list-style: none;
+            padding: 0;
+        }
+        .footer-column ul li {
+            margin-bottom: 12px;
+            margin-left: 30px;
+           
+        }
+        .footer-column li a{
+            text-decoration: none;
+            color: rgb(204, 201, 201);
+            font-size: 16px;
+            
+        }
+        .footer-column ul li a:hover{
+            color:#00bcd4;
+        }
+        .footer-bottom{
+            background-color: black;
+            text-align: center;
+            padding:20px;
+            font-size: 15px;
+        }
+        .circle{
+            width: 60px;
+            height: 60px;
+            background: #667eea;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icons-1{
+            border: 2px solid white;
+            width: 13px ;
+            height: 30px;
+            background: transparent;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <section class="sec-1">
+       <div class="main">
+         <h1>Master Web Development</h1>
+        <p>Learn HTML, CSS, and JavaScript from scratch to advanced concepts with <br>
+             our comprehensive tutorial series.</p>
+     
+        <div class="buttons">
+            <button class="primary">
+                Start Learning
+            </button>
+            <button class="secondary">
+                Explore Features
+            </button>
+        </div>
+          </div>
+        
+    </section>
+
+    <section class="sec-2">
+      <div class="boxs">
+
+         <div class="box">
+            <h2>57+</h2>
+            <p>Comprehensive Lessons</p>
+         </div>
+
+         <div class="box">
+            <h2>1000+</h2>
+            <p>Code Examples</p>
+         </div>
+
+         <div class="box">
+            <div class="icon"></div>
+            <h2>5000+</h2>
+            <p>Students Enrolled</p>
+         </div>
+
+         <div class="box">
+            <div class="icon"></div>
+            <h2>95%</h2>
+            <p>Success Rate</p>
+         </div>
+      </div>
+    </section>
+
+
+    <section class = sec-3>
+        <div class = con-3>
+            <h2 class = main>Why Choose Our Tutorials?</h2>
+            <div class = cards>
+                <div class = cardy>
+                      <div class = icons></div>
+                    <h2><b>Interactive Editors</b></h2>
+                    <p><b>Write and test code directly in your browser with real-time previews<</b></p>
+                </div>
+                <div class = cardy>
+                    <h2><b>Fully Responsive</b></h2>
+                    <p><b>Learn on any device with our mobile-friendly design</b></p>
+                </div>
+                <div class = cardy>
+                    <h2><b>Hands-on-projects</b></h2>
+                    <p><b>Apply your skills with practical projects and exercises</b></p>
+                </div>
+                <div class = cardy>
+                    <div class = icons></div>
+                    <h2><b>Certification</b></h2>
+                    <p><b>Earn certificates upon completing each tutorial series</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+     <section class = sec-4>
+        <div class = con-4>
+            <h2 class = main-1>Choose Your Learning Path</h2>
+            <div class = car>
+                <div class = card>
+                    <h2>HTML Tutorials Series</h2>
+                    <p>Learn HTML from basics to advanced concepts <br>
+                          19 comprehensive lessons 
+                        <br>100% completed </p>
+                </div>
+                <div class = card>
+                    <h2>CSS Tutorials Series</h2>
+                    <p>Learn CSS from fundamentals to animations <br>
+                         19 comprehensive lessons <br>
+                         100% completed </p>
+                </div>
+                <div class = card>
+                    <h2>JavaScript Tutorial Series</h2>
+                    <p>Learn JavaScript from basics to advanced concepts <br>
+                          19 comprehensive lessons <br>
+                           100% completed </p>
+                </div>
+                <div class = card>
+                    <h2>Integrated Project</h2>
+                    <p>Combine HTML, CSS, and  JavaScript in a complete project Hands-on application development <br>
+                       100% completed </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+     <section class="sec-5">
+        <div class="loki">
+        <h1>What Our Students Say</h1>
+
+        <div class="con-5">
+            <div class="card-2">
+                <p><i>"These tutorials helped me land my first web development job. The interactive editors made learning so much easier!"</i></p>
+                <div class="inside-card">
+                    <div class="circle">
+                        <div class="icons-1"></div>
+                    </div>
+                    <div>
+                        <h3>Sarah Johnson</h3>
+                        <span>Frontend Developer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-2">
+                <p><i>"The progression from basic to advanced concepts is perfect. I went from zero knowledge to building my own website in just 2 months!"</i></p>
+                <div class="inside-card">
+                    <div class="circle">
+                         <div class="icons-1"></div>
+                    </div>
+                    <div>
+                        <h3>Michael Chen</h3>
+                        <span>UI/UX Designer</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card-2">
+                <p><i>"The integrated project was the highlight. It showed me how all the technologies work together in real applications."</i></p>
+                <div class="inside-card">
+                    <div class="circle">
+                         <div class="icons-1"></div>
+                    </div>
+                    <div>
+                        <h3>Emma Rodriguez</h3>
+                        <span>Full Stack Developer</span>
+                    </div>
+                </div>
+            </div>
+             
+
+
+        </div>
+
+        <div class="forms">
+             <h1>Stay Updated</h1>
+        <p>Subscribe to our newsletter for new tutorials, tips, and resources</p>
+
+        <form >
+            <input type="email" placeholder="Enter your email" required>
+            <button class="submit">Subscribe</button>
+        </form>
+           </div>
+        </div>
+     </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2>Web Development Tutorials</h2>
+                <p>Comprehensive learning platform for HTML, CSS, and JavaScript</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">HTML Tutorials</a></li>
+                    <li><a href="#">CSS Tutorials</a></li>
+                    <li><a href="#">JavaScript Tutorials</a></li>
+                    <li><a href="#">Integrated Project</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>support@webtutorials.com</p>
+                <p>+1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Web Development Tutorials. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
