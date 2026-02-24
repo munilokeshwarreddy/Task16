@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mr.camel</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+     <style>
+        
+        
+        .sec-1{
+            background-color: #e9e9e9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+        }
+        .sec-1 h1{
+            font-size: 33px;
+        }
+        .icons{
+            display: flex;
+            gap: 15px;
+        }
+
+        .sec-2{
+            display: flex;
+        }
+        .image{
+            width: 200px;
+            padding: 20px;
+            border-right: 1px solid #ccc;
+        }
+        .image img{
+            width: 100%;
+            margin-bottom: 60px;
+        }
+        .image ul{
+            list-style: none;
+            margin-bottom: 15px;
+        }
+        .image ul li{
+            padding: 10px;
+            font-size: 18px;
+             margin-right: 80px
+            
+        }
+        .image ul li.active{
+            background-color:#82e4e3 ;
+            color: white;
+        }
+        .image p{
+            margin-top: 40px;
+            line-height: 22px;
+           
+        }
+        .main{
+            flex: 1;
+            padding: 20px;
+        }
+        .main h2{
+            margin-bottom: 10px;
+        }
+        .main p{
+            margin-bottom: 20px;
+        }
+        hr{
+            margin: 20px 0;
+        }
+        .table-container{
+            width:100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        .main th{
+            background: #7fd1cc;
+            padding: 15px;
+            color: white;
+        }
+        .main td{
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .form input,textarea{
+            display: block;
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 250px;
+        }
+        .form textarea{
+            width: 300px;
+            height: 80px;
+        }
+
+        .form button{
+            padding: 5px 10px;
+        }
+
+        .footer {
+            background: #2e3553;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+     </style>
+</head>
+<body>
+    <header class="sec-1">
+        <h1><i><b>mr. camel</b></i></h1>
+        <nav>
+            <div class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <div class="sec-2">
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbbWfJwk3V1rPBFRB9pHqeUcH_dsPhFsHO1w&s" alt="">
+            <ul>
+                <li class="active">Home</li>
+                <li>Carrer</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+            <p>
+                "Do something <br> important in life. I <br> convert green grass <br> to code." <br>
+                _Mr Camel
+            </p>
+        </div>
+
+        <div class="main">
+            <h2>About Me</h2>
+            <p>I dont't look like some handsome horse, but I am a real  desrt king. I can servive days without water.
+
+            </p>  
+
+            <h2>My Carrer</h2>
+            <p>I work as a web developer for a company that makes websites for camel businesses.</p>
+            <hr>
+            <h2>How Can I Help You?</h2>
+
+            <table class = table-container>
+                <tr>
+                    <th>SKILL 1</th>
+                    <th>SKILL 2</th>
+                    <th>SKILL 3</th>
+                </tr>
+                <tr>
+                    <td><i
+                  style="padding: 10px;font-size: 30px; "
+                  class="fa-sharp-duotone fa-solid fa-broom" ></i></td>
+               
+                    <td><i style="padding: 10px;font-size: 30px; " class="fa-solid fa-box-archive"></i></td>
+                    <td><i
+                  style="padding: 10px; font-size: 30px;"
+                  class="fa-duotone fa-solid fa-truck"></i></td>
+                
+                </tr>
+                <tr>
+                    <td>Cleaning kaktus in your backyard</td>
+                    <td>Storing some fat for you</td>
+                    <td>Taking you through the desert</td>
+                </tr>
+            </table>
+
+            <form class = form>
+                Email: 
+                <input type = text>
+                Mobile:
+                <input type = text>
+                <textarea placeholder="Enter your message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class=" footer">
+        Copyright Mr. Camel
+    </footer>
+
+           
+            
+        </div>
+    </div>
+
+</body>
+</html>
