@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        body{
+            border-left: 4px solid #1e457b ;
+        }
+       
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background:#1e457b;
+            padding: 15px 30px;
+            color: #fff;
+            margin: 0 10px 0 10px;
+        }
+        .logo{
+            font-size: 25px;
+            font-weight: bold;
+
+        }
+        .links{
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+        .links a{
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+        }
+        .sec-1{
+            display: flex;
+
+        }
+        .side{
+            background: #ebecf0;
+            width: 35%;
+            padding: 20px  50px ;
+        }
+        .side h3{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .side ul{
+            list-style: none;
+        }
+        .side li{
+               margin-bottom: 8px ;
+               
+        }
+        .main{
+            background-color:white;
+            width: 75%;
+            text-align: center;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-right: 300px;
+        }
+        .main-1{
+            background-color: white;
+            width: 500px;
+            height: 500px;
+            padding: 40px;
+            border: 4px solid  #212f5a;
+            border-radius: 10px ;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        .main-1 h1{
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: #212f5a;
+        }
+        .btn{
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: green;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .footer{
+            color: #212f5a ;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .icons{
+            font-size: 25px;
+            margin-top: 10px;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #212f5a;
+            
+        }
+        .icons i{
+            font-size: 25px;
+            margin-top: 13px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            
+           &lt;/&gt; My Code Blog
+        </div>
+
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+                
+        </ul>
+    </nav>
+
+    <div class="sec-1">
+        <div class="side">
+            <h3>Recent Posts</h3>
+            <ul>
+                <li>HTML Basics</li>
+                <li>CSS Grid</li>
+                <li>JavaScript Intro</li>
+                <li>Web Accessibility</li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="main-1">
+                <h1>Welcome to my <br> coding journey!</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgHVxcbK16l8qVxkMTN3VKS6ZeZzqqpC6nGg&s" alt="">
+                <div >
+                    <button class="btn">Learn More</button>
+
+                </div>
+              
+            </div>
+             <hr>
+            <footer class="footer">
+                <p>&copy; 2024 My Coding Journey. All rights reserved.</p>
+                <div class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-telegram"></i> 
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
