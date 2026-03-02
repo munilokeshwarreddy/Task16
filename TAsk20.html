@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sec-1 {
+            display: flex;
+            max-width: 1400px;
+            margin: auto;
+            background: #f3f4f7;
+        }
+
+        .vertical {
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            font-size: 34px;
+            color: aqua;
+            display: flex;
+            align-items: center;
+            padding: 40px 10px;
+        }
+        .container {
+            flex: 2.5;
+            padding: 40px;
+        }
+
+        .image-1 {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .image-1 img {
+            width: 70px;
+        }
+        .image-1 h2{
+            font-size: 38px;
+            font-weight: 500;
+        }
+        .image-wrapper img{
+            height: 300px;
+            border-radius: 8px;
+            width: 600px;
+        }
+        .para{
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            
+        }
+        .sec-2{
+            display: flex;
+            height: auto;
+            background-color: rgb(228, 237, 239);
+        }
+        .v-line{
+            flex: 1;
+            border-left: 1px solid rgb(197, 206, 206);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 10px;
+           
+        }
+        .v-line img{
+            width: 52px;
+            margin-bottom:100px;
+        }
+
+        .v-text{
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            font-size: 28px;
+            color: rgb(65, 210, 242);
+            text-align: center;
+            line-height: 1.2;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class=sec-1>
+        <div class=vertical>
+            Women in HealthCare
+        </div>
+        <div class=container>
+            <div class=image-1>
+                <img src="./india.jpeg">
+                <h2>Women in HealthCare</h2>
+            </div>
+            <h3>Thursday, March 5,2026 | Linked Device</h3>
+            <div class=image-wrapper>
+                <img src="./women-in-healthcare-steering-ai-enabled-care-ecosystem-web.jpg">
+            </div>
+            <p class="para">Our healthcare and life sciences forum will see women leaders<br> discussing AI in
+                healthcare,transforming healthcare,and impacting<br> lives with innovation and tech,</p>
+            <a href=#>READ MORE <span>&#8594;</span></a>
+
+        </div>
+
+        <div class="sec-2">
+            <div class="v-line">
+                <img src="./usa.jpeg" alt="">
+                <div class="v-text">SAP A&D Innovation Day's 26</div>
+            </div>
+
+            <div class="v-line">
+                <img src="./belgium.jpg" alt="">
+                <div class="v-text">TCS at Leaders in logistics</div>
+            </div>
+
+            <div class="v-line">
+                <img src="./usa.jpeg" alt=""> 
+                <div class="v-text">TCS at NVIDIA GTS 2026</div>                   
+            </div>
+
+            <div class="v-line">
+                <img src="./usa.jpeg" alt="">
+                <div class="v-text">TCS at SSOW conference 2026</div>
+            </div>
+
+            <div class="v-line">
+                <img src="./usa.jpeg" alt="">
+                <div class="v-text">TCS Life Sciences Forum</div>
+            </div>
+
+            <div class="v-line">
+                <img src="./usa.jpeg" alt="">
+                <div class="v-text">TCS at Adobe Summit 2026</div>
+            </div>
+
+            <div class="v-line">
+                <img src="./usa.jpeg" alt="">
+                <div class="v-text">TCS at Google Cloud Next</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
